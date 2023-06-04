@@ -74,3 +74,58 @@ function avgHeight(n, arrOfStudentsHeight) {
 }
 
 avgHeight(6, [2.2, 1, 3, 1.9, 2.4, 1.7]) //(number of students, arr of student heights)
+
+
+// 4. Given an array of n integers, find the maximum element in the given array.
+
+// Note : Do not use any inbuilt functions that find the maximum element directly.
+
+// Input format
+// There are two lines of input
+
+// First line contains the integer n.
+
+// Next line contains n space separated integers.
+
+// Output format
+// Print the maximum element in the array.
+
+// Sample Input 1
+// 5
+
+// 1 2 3 1 2
+
+// Sample Output 1
+// 3
+
+function maxNum(n, arr) {
+  let max=0;
+  for(let i=0; i<arr.length; i++){
+    if(arr[i] > max){
+      max = arr[i]
+    }
+  }
+  return console.log("4:: maxNum: ", max)
+}
+
+maxNum(5 ,[1, 2, 3, 1, 3])
+
+
+
+
+
+//5. Given a paragraph of words, capitalise the first character of each word and return the updated paragraph.
+
+// Note : No inbuilt function such as split() to be used.
+
+// Input format
+// One line of input which contains a string, the paragraph.
+
+// Output format
+// Return the paragraph after capitalising each word.
+
+// Sample Input 1
+// the quick Brown fox jumps over The lazy dog.
+
+// Sample Output 1
+// The Quick Brown Fox Jumps Over The Lazy Dog.
