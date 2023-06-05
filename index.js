@@ -111,5 +111,27 @@ function maxNum(n, arr) {
 maxNum(5 ,[1, 2, 3, 1, 3])
 
 
+
+
+
+//5. Given a paragraph of words, capitalise the first character of each word and return the updated paragraph.
+
+// Note : No inbuilt function such as split() to be used.
+
+// Input format
+// One line of input which contains a string, the paragraph.
+
+// Output format
+// Return the paragraph after capitalising each word.
+
+// Sample Input 1
+// the quick Brown fox jumps over The lazy dog.
+
+// Sample Output 1
+// The Quick Brown Fox Jumps Over The Lazy Dog.
+
+
+
+
 // TIME COMPLEXITY - An estimation of time wrt input, helps us understand how the execution time increases as the input size grows
 // the time complexity of the above problem is 0(n) because it involves iterating through the array once to find the max element in the array.
