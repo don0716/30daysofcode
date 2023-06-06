@@ -131,6 +131,25 @@ maxNum(5 ,[1, 2, 3, 1, 3])
 // The Quick Brown Fox Jumps Over The Lazy Dog.
 
 
+function capitaliseFirstChar(para){
+
+  let words = para.split(" ")
+  let capitalisedWords = []
+
+  for(let i=0; i<words.length; i++){
+   let capitalisedWord = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+    capitalisedWords.push(capitalisedWord)
+  }
+  // console.log(capitalisedWords)
+  return console.log("5:: (using Inbuilt functions) ",capitalisedWords.join(" "))
+
+  // console.log(words[1].charAt(0).toUpperCase())
+  
+}
+
+capitaliseFirstChar("the quick Brown fox jumps over The lazy dog")
+
+
 
 
 // TIME COMPLEXITY - An estimation of time wrt input, helps us understand how the execution time increases as the input size grows
