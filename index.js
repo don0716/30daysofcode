@@ -154,3 +154,46 @@ capitaliseFirstChar("the quick Brown fox jumps over The lazy dog")
 
 // TIME COMPLEXITY - An estimation of time wrt input, helps us understand how the execution time increases as the input size grows
 // the time complexity of the above problem is 0(n) because it involves iterating through the array once to find the max element in the array.
+
+
+// 6:: Given a string, count the total number of vowels present in that string.
+
+// Note: The string contains uppercase and lowercase english alphabets only.
+
+// Input format
+// One line of input, which contains the given string.
+
+// Output format
+// Print the total number of vowels.
+
+// Sample Input 1
+// language
+
+// Sample Output 1
+// 4
+
+// Explanation 1
+// There are a total of 4 vowels in the string "language" i.e. 'a', 'u', 'a', 'e'.
+
+// Constraints
+// 0 < Length of string < 100
+
+function countVowels(input) {
+
+  let str = input.toString()
+  let counter = 0;
+
+  if(str.length <= 0 || str.length > 100) {
+    console.log("6:: Input invalid")
+  } else {
+    for(let i=0; i<str.length; i++){
+    if(str[i] === "a" || str[i] ===  "e" || str[i] ===  "i" || str[i] ===  "o" || str[i] === "u") {
+      counter = counter + 1
+  }
+  }
+    console.log("6:: No. of Vowels in sentence = ", counter)
+  }
+}
+
+
+countVowels("language")
