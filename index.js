@@ -236,9 +236,29 @@ function checkIfPalindrome(str){
   if(reversedStr === str){
     console.log("7:: string is a palindrome")
   } else {
-    console.log("7:: string is not a palindrome")
+    let makePalindrome = str + reversedStr
+    console.log("7:: string is not a palindrome. ConvertedStrToPalindrome = ", makePalindrome)
   }
   
 }
 
-checkIfPalindrome("racecard")
+checkIfPalindrome("word")
+
+
+
+//8::  In the imperial system of measurement, feet and inches are used to measure length. Where 1 feet = 12 inches.
+
+
+// Write a class Length(ft, inch) and initialize its data members ft and inch with the values passed to the constructor at the time of creation of a new object.
+
+// Add two methods to this class -
+
+// isValidObject(lengthObj) - Returns true if the ft and the inch in the lengthObj are greater than or equal to 0, false in any other case. This would ensure that the lengths passed to the constructor at the time of creating a new object are not negative.
+
+
+// addLength(lengthObj) - Takes in an object of the Length() class, and adds the members (ft and inch) of the current object with the members (ft and inch) of the passed length object.
+
+// If the passed lengthObj and the current length object are both valid, the method returns an array with two elements in the following format [totalFt, totalInches]. else returns [0, 0]
+
+// Example: obj1.addLength(obj2) here obj1 and obj2 are objects of the Length class.
+
